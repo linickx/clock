@@ -1,0 +1,23 @@
+application: linickxclock
+version: 2
+runtime: php
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /rd
+  script: rd.php
+
+- url: /bg
+  script: bg.php
+
+- url: /about
+  script: about.php
+
+- url: .*
+  script: index.php
