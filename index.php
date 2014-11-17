@@ -24,7 +24,7 @@ body{
 	 font-weight: bold;
 	 margin:0;
 	 padding:0;
-	 color:#bbbbbb; 
+	 color:#bbbbbb;
 }
 
 a {
@@ -37,7 +37,7 @@ a:hover {
 
 .container {margin: 0 auto; overflow: hidden; }
 
-.clock { padding:30px; color:#fff; 
+.clock { padding:30px; color:#fff;
 
   height: 50%;
   overflow: auto;
@@ -52,19 +52,19 @@ ul li { display:inline; font-size:10em; text-align:center; }
 
 .point { position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite; padding-left:10px; padding-right:10px; }
 
-@-webkit-keyframes mymove 
+@-webkit-keyframes mymove
 {
 0% {opacity:1.0;}
 50% {opacity:0;}
-100% {opacity:1.0;}	
+100% {opacity:1.0;}
 }
 
 
-@-moz-keyframes mymove 
+@-moz-keyframes mymove
 {
 0% {opacity:1.0;}
 50% {opacity:0;}
-100% {opacity:1.0;}	
+100% {opacity:1.0;}
 }
 
 #box {
@@ -83,14 +83,14 @@ setInterval( function() {
 	// Add a leading zero to seconds value
 	$("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
 	},1000);
-	
+
 setInterval( function() {
 	// Create a newDate() object and extract the minutes of the current time on the visitor's
 	var minutes = new Date().getMinutes();
 	// Add a leading zero to the minutes value
 	$("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
     },1000);
-	
+
 setInterval( function() {
 	// Create a newDate() object and extract the hours of the current time on the visitor's
 	var hours = new Date().getHours();
@@ -100,7 +100,7 @@ setInterval( function() {
 
 setInterval( function() {
 
-	 $.getJSON('/rd').success(function(data){ 
+	 $.getJSON('/rd').success(function(data){
 
 	 	$(".point").html(data.clock_delimter);
 	 	//$("body").css('background-image', "url(");
@@ -109,8 +109,8 @@ setInterval( function() {
 		 	if (data.background_repeat == 'no-repeat') { $('body').css('background-size', '100%'); };
 	 	$('body').css('font-family', data.font_family);
 	 	$(".clock").css('color', data.font_colour);
-	 	
-	 	$("#box").html(data.box_html);	
+
+	 	$("#box").html(data.box_html);
 
 	 });
 	}, 900000);
@@ -130,8 +130,8 @@ function timer()
 
  $("#timer").html(count);
 }
-	
-}); 
+
+});
 
 
 </script>

@@ -19,7 +19,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	$.getJSON('/rd').success(function(data){ 
+	$.getJSON('/rd').success(function(data){
 		$('body').css('background', 'url('+data.background_url+') '+data.background_repeat+'');
 		 if (data.background_repeat == 'no-repeat') { $('body').css('background-size', '100%'); };
 		$('body').css('color', data.font_colour);
@@ -34,15 +34,15 @@ body {
 	font-size: 1.5em;
 }
 
-a:link, a:visited, a:active { 
-	color: #aa0000; 
+a:link, a:visited, a:active {
+	color: #aa0000;
 }
 .container {
   position: absolute;
   left: 20%;
   top: 10%;
 }
- 
+
 .box {
   width: 80%;
   background-color: rgba(128,128,128,0.5);
@@ -56,7 +56,7 @@ a:link, a:visited, a:active {
 		<h1>About</h1>
 		<p>
 			Hello, an welcome to my little clock. <br />
-			This clock was a weekend project where I wanted to create an Internet clock which included some variety, every <b>15 Minutes</b> the background (<em>and other aspects</em>) of this clock will update. 
+			This clock was a weekend project where I wanted to create an Internet clock which included some variety, every <b>15 Minutes</b> the background (<em>and other aspects</em>) of this clock will update with a random image from <a href="/gallery">this gallery</a>; the gallery refreshes every <abbr title="depedning on the upstream service">4 hours-<em>ish</em></abbr>. 
 		</p>
 		<h2>Credz</h2>
 		<ul>

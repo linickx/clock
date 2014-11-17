@@ -1,0 +1,17 @@
+/* ABOUT ME */
+
+Name:	Nick Bettison
+From:	UK
+
+Website  :	http://www.linickx.com
+Github   :	https://github.com/linickx
+Twitter  :	http://twitter.com/linickx (@linickx)
+LinkedIn :	http://uk.linkedin.com/in/linickx
+FaceBook :	http://www.facebook.com/nick.bettison
+
+
+/* SITE */
+
+Standards:	HTML5, CSS3
+Infrastructure:	Google App Engine
+Editor: Atom
